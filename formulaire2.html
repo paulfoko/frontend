@@ -1,0 +1,90 @@
+<DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css" />
+        <title>Formulaire</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">DAILY FOOD</a>
+                <ul>
+                    <li><a href="#">acceuil</a></li>
+                    <li><a href="#">acceuil</a></li>
+                    <li><a href="#">acceuil</a></li>
+                    <li><a href="#">acceuil</a></li>
+                    <li>
+                        <button class="btn" id="displayForm">se connecter</button>
+                    </li>    
+                </ul>
+            </nav>
+        </div>
+        <section>
+                <div class="sec-container">
+                    <div class="form-wrapper">
+                        <div class="card">
+                            <div class="card-header">
+                                <div id="forLogin" class="form-header active">Se connecter</div>
+                                <div id="forRegister" class="form-header">S'inscrire</div>
+                            </div>
+                            <div class="card-body" id="formContainer">
+                                <form id="loginForm">
+                                    <input type="text" class="form-control" placeholder="@utilisteur" />
+                                    <button class="formButton">Connexion</button>
+                                </form>
+                                <form id="registerForm" class="toggleForm">
+                                    <input type="text" class="form-control" placeholder="@utilisteur" />
+                                    <input type="password" class="form-control" placeholder="@mot de passe" />
+                                    <input type="password" class="form-control" placeholder="@confirmer le mot de passe" />
+                                    <button class="formButton">Inscription</button>
+                                </form>
+                            </div>   
+                        </div>
+                    </div>
+                </div>        
+        </section>
+        <script>
+            const displayForm = _('displayForm');
+            const forLogin = _('forLogin');
+            const loginForm = _('loginForm');
+            const forRegister = _('forRegister');
+            const registerForm = _('registerForm');
+            const formContainer = _('formContainer');
+            displayform.addEventlistener('click', showForm);
+            
+            forlogin.addEventListener('click', () => {
+                forLogin.classlist.remove('active')
+                forRegister.classlist.add('active')
+                if(loginForm.classList.contains('toggleForm')){
+                    formContainer.style.transform = 'translate(0%)';
+                    formContainer.style.transition = 'transform 0.5s';
+                    registerForm.classlist.add('toggleForm');
+                    loginForm.classlist.remove('toggleForm');}
+
+            })
+                
+                    
+
+            forRegister.addEventListener('click', () => {
+                forLogin.classlist.remove('active')
+                forRegister.classlist.add('active')
+                if(registerForm.classList.contains('toggleForm')){
+                    formContainer.style.transform = 'translate(-100%)';
+                    formContainer.style.transition = 'transform 0.5s';
+                    registerForm.classlist.remove('toggleForm');
+                    loginForm.classlist.add('toggleForm');
+                }         
+            });
+            function _(e) {
+                return document.getElementById(e);
+            }
+
+            fonction showForm() {
+                document.querySelector('.form-wrapper .card').classlist.toggle('show');
+            }
+        </script>
+    </body>    
+</html>
