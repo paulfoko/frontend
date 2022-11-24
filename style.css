@@ -150,6 +150,9 @@ nav ul li a {
   height: 22rem;
   background-color: #ffbb00;
   border-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 #trading{
   display: flex;
@@ -163,8 +166,8 @@ nav ul li a {
   box-shadow: inset rgba(0, 0, 0, 0.507) 0 2px 4px 0 ;
 }
 .tranding-slide-img img{
-  width: 22rem;
-  height: 22rem;
+  width: 100%;
+  height: 100%;
   border-radius: 15px 15rem 15px 15px;
   box-shadow: inset rgba(0, 0, 0, 0.507) 0 2px 4px 0 ;
 }
@@ -182,10 +185,13 @@ nav ul li a {
 }
 .price{
   color: #fff;
+  width: 50px;
+  height: 50px;
   text-align: center;
-  right: 1rem;
-  top: 1rem;
-  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  transform: rotate(45deg);
 }
 .note{
   background-color: #ffbb00;
@@ -199,11 +205,11 @@ nav ul li a {
 .tranding-slide-content-bottom{
   bottom: 5px;
   left: 5px;
+  position: absolute;
 }
 .element-price{
   color: #fff;
-  transform: rotate(45deg);
-  
+
 }
 .element-name{
   color: black;
@@ -212,10 +218,57 @@ nav ul li a {
 .rating{
   right: 1rem;
   color: #ffbb00;
+  display: flex;
 }
 .element-rating{
   margin-left: 2rem;
 }
+
+
+
+
+
+
+
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.back_up{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.btn_back_up{
+  border-radius: 90px;
+  justify-content: center;
+  margin: 5px;
+  font-size: 3rem;
+  color: #fff;
+  left: 2rem;
+  background-color: rgba(112, 112, 112, 0.521);
+}
+.container_body{
+  display: flex;
+  justify-content: space-around;
+}
+.container_footer{
+  background-color: #292929;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
 
 
   button.btn {
