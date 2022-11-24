@@ -9,31 +9,109 @@
 
 .container {
     position:relative;
+    display: flex;
     height: 100vh;
+    padding: 0;
+    margin: 0;
     width: 100%;
-    padding: 0 8%;
-    background: linear-gradient(rgba(0, 0, 0, -4), transparent), url('club-sandwich-3538455.jpg') center center no-repeat;
     background-size: cover;
 }
+.container img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.container .active{
+  opacity: 1;
+}
+.next, .preview, .nexth, .previewh {
+  font-size: 40px  ;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  height: 60px;
+  width: 60px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border-radius: 90px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 
+.description{
+  align-items: center;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  right: 7rem;
+  left: 7rem;
+  z-index: 5;
+  border-radius: 5px;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  color: #fff;
+  background-color: rgba(177, 177, 177, 0.39);
+}
+.description .text{
+  width: 100%;
+  height: 100%;
+  display: none;
+  text-align: center;
+  transition: display 1s;
+}
+.description .print{
+  display: flex;
+}
+.next{
+right: 1rem;
+color: rgba(255, 255, 255, 0.842);
+background-color: rgba(255, 255, 255, 0.308);
+}
+.nexth{
+  background-color: rgba(0, 0, 0, 0.507);
+  color: #fff;
+  right: 1rem;
+}
+.preview{
+  left: 1rem;
+  color: rgba(255, 255, 255, 0.842);
+  background-color: rgba(255, 255, 255, 0.308);
+}
+.previewh{
+  background-color: rgba(0, 0, 0, 0.507);
+  color: #fff;
+  left: 1rem;
+}
 nav{
     display: flex;
-    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.315);
     align-items: center;
+    transition: 0.4s;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 99;
     flex-wrap: wrap;
-    padding: 5px 0;
+    box-shadow: rgba(0, 0, 0, 0.507) 0 2px 4px 0;
 }
 
 nav .logo{
-    width: 120px;
-    cursor: pointer;
-    font-size: 2.5rem;
-    font-style: oblique;
-    font-weight: bold;
-    text-decoration: none;
-    color: aquamarine;
-}
+    width: auto;
 
+}
+nav .logo img{
+  height: 60px;
+  width: 300px;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 11;
+}
 nav ul {
     display: flex;
     justify-content: flex-end;
@@ -51,9 +129,94 @@ nav ul li {
 nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
-    color:aquamarine;
+    color:rgb(255, 255, 255);
     font-size: 16px;
 }
+
+.container_pop_head{
+  width: 100%;
+  justify-content: center;
+  padding: 5px;
+  text-align: center;
+}
+.container_popular{
+  margin: 5%;
+}
+.swiper-wrapper{
+  display: flex;
+}
+.swiper-slide{
+  width: 22rem;
+  height: 22rem;
+  background-color: #ffbb00;
+  border-radius: 15px;
+}
+#trading{
+  display: flex;
+  flex-direction: column;
+}
+.tranding-slide-img{
+  justify-content: space-around;
+  background-color: #0059ff;
+  border: 0;
+  border-radius: 15px 15rem 15px 15px;
+  box-shadow: inset rgba(0, 0, 0, 0.507) 0 2px 4px 0 ;
+}
+.tranding-slide-img img{
+  width: 22rem;
+  height: 22rem;
+  border-radius: 15px 15rem 15px 15px;
+  box-shadow: inset rgba(0, 0, 0, 0.507) 0 2px 4px 0 ;
+}
+.tranding-slide-img img:hover{
+  transition: 0.2s;
+  border-radius: 15px;
+  box-shadow: 0;
+  cursor: pointer;
+}
+.tranding-slide-content{
+  top: 2rem;
+  right: 2rem;
+  position: absolute;
+  z-index: 12;
+}
+.price{
+  color: #fff;
+  text-align: center;
+  right: 1rem;
+  top: 1rem;
+  position: absolute;
+}
+.note{
+  background-color: #ffbb00;
+  color: #fff;
+  border-radius: 90px;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.tranding-slide-content-bottom{
+  bottom: 5px;
+  left: 5px;
+}
+.element-price{
+  color: #fff;
+  transform: rotate(45deg);
+  
+}
+.element-name{
+  color: black;
+  font-size: 1rem;
+}
+.rating{
+  right: 1rem;
+  color: #ffbb00;
+}
+.element-rating{
+  margin-left: 2rem;
+}
+
 
   button.btn {
     padding: 10px 20px;
@@ -62,14 +225,14 @@ nav ul li a {
     font-style: italic;
     margin-top: 0;
     background-color: transparent;
-    color: aquamarine;
+    color: rgb(255, 255, 255);
     border: 1px solid transparent;
     transition: border-color .3s;
   }
 
   button.btn:hover {
-    border-color:aquamarine;
-
+    border-color:rgb(78, 13, 255);
+    color: rgb(78, 13, 255);
   }
 
   section{

@@ -10,81 +10,148 @@
     <body>
         <div class="container">
             <nav>
-                <a href="#" class="logo">DAILY FOOD</a>
+                <div class="logo"><img src="logo.png"></div>
                 <ul>
-                    <li><a href="#">acceuil</a></li>
-                    <li><a href="#">acceuil</a></li>
-                    <li><a href="#">acceuil</a></li>
-                    <li><a href="#">acceuil</a></li>
+                    <li><a href="#"><ion-icon name="home"></ion-icon>Home</a></li>
+                    <li><a href="#"><ion-icon name="restaurant"></ion-icon> Restaurant</a></li>
+                    <li><a href="#">SuperMarket</a></li>
+                    <li><a href="#"><ion-icon name="cart"></ion-icon>Panier</a></li>
                     <li>
-                        <button class="btn" id="displayForm">se connecter</button>
+                        <button class="btn" id="displayForm">Connexion</button>
                     </li>    
                 </ul>
             </nav>
+            <div class="description">
+                <div class="text print">Profitez des meilleurs services de livraisons.</div>
+                <div class="text">Profitez des meilleurs services de restaurations.</div>
+                <div class="text">Profitez des meilleurs produits disponible sur le marchée.</div>
+                <div class="text">Reservez dans les meilleurs restaurants en un clic.</div>
+            </div>
+            <img class="container_img active" src="img10.jpg">
+            <img class="container_img" src="img7.jpg">
+            <img class="container_img" src="img9.jpg">
+            <img class="container_img" src="img1.jpg">
+            <div class="next" onmouseover="this.className='nexth'" 
+            onmouseout="this.className='next'">></div>
+            <div class="preview" onmouseover="this.className='previewh'" 
+            onmouseout="this.className='preview'"><</div>
+
         </div>
-        <section>
-                <div class="sec-container">
-                    <div class="form-wrapper">
-                        <div class="card">
-                            <div class="card-header">
-                                <div id="forLogin" class="form-header active">Se connecter</div>
-                                <div id="forRegister" class="form-header">S'inscrire</div>
+        <br>
+        <section id="trading">
+            <div class="container_pop_head">
+                <h2 class="text-center section-subheading">- popular deliver -</h2>
+                <br><hr style="width:100%;">
+            </div>
+        
+            <div class="container_popular">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide tranding-slide">
+                        <div class="price"><h1 class="element-price">2000</h1> fcfa</div>
+                        <div class="tranding-slide-img">
+                            <img src="meal1.jpg" alt="#">
+                        </div>
+                        <div class="tranding-slide-content">
+                            
+                            <div class="tranding-slide-content-bottom">
+                                <h2 class="element-name">special meal1</h2>
+                                <h3 class="element-rating">
+                                    <div class="note">4.5</div>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half"></ion-icon>
+                                    </div>
+                                </h3>
                             </div>
-                            <div class="card-body" id="formContainer">
-                                <form id="loginForm">
-                                    <input type="text" class="form-control" placeholder="@utilisteur" />
-                                    <button class="formButton">Connexion</button>
-                                </form>
-                                <form id="registerForm" class="toggleForm">
-                                    <input type="text" class="form-control" placeholder="@utilisteur" />
-                                    <input type="password" class="form-control" placeholder="@mot de passe" />
-                                    <input type="password" class="form-control" placeholder="@confirmer le mot de passe" />
-                                    <button class="formButton">Inscription</button>
-                                </form>
-                            </div>   
                         </div>
                     </div>
-                </div>        
-        </section>
-        <script>
-            const displayForm = _('displayForm');
-            const forLogin = _('forLogin');
-            const loginForm = _('loginForm');
-            const forRegister = _('forRegister');
-            const registerForm = _('registerForm');
-            const formContainer = _('formContainer');
-            displayform.addEventlistener('click', showForm);
-            
-            forlogin.addEventListener('click', () => {
-                forLogin.classlist.remove('active')
-                forRegister.classlist.add('active')
-                if(loginForm.classList.contains('toggleForm')){
-                    formContainer.style.transform = 'translate(0%)';
-                    formContainer.style.transition = 'transform 0.5s';
-                    registerForm.classlist.add('toggleForm');
-                    loginForm.classlist.remove('toggleForm');}
-
-            })
-                
                     
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="meal2.jpg" alt="#">
+                        </div>
+                        <div class="tranding-slide-content">
+                            <div class="price"><h1 class="element-price">5000 </h1>fcfa</div>
+                            <div class="tranding-slide-content-bottom">
+                                <h2 class="element-name">special meal2</h2>
+                                <h3 class="element-rating">
+                                    <div class="note">4.5</div>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="meal3.jpg" alt="#">
+                        </div>
+                        <div class="tranding-slide-content">
+                            <div class="price"><h1 class="element-price">2500 </h1>fcfa</div>
+                            <div class="tranding-slide-content-bottom">
+                                <h2 class="element-name">special meal3</h2>
+                                <h3 class="element-rating">
+                                    <div class="note">4.5</div>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-half"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="meal4.jpg" alt="#">
+                        </div>
+                        <div class="tranding-slide-content">
+                            <div class="price"><h1 class="element-price">4000 </h1>fcfa</div>
+                            <div class="tranding-slide-content-bottom">
+                                <h2 class="element-name">special meal4</h2>
+                                <h3 class="element-rating">
+                                    <div class="note">5</div>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
 
-            forRegister.addEventListener('click', () => {
-                forLogin.classlist.remove('active')
-                forRegister.classlist.add('active')
-                if(registerForm.classList.contains('toggleForm')){
-                    formContainer.style.transform = 'translate(-100%)';
-                    formContainer.style.transition = 'transform 0.5s';
-                    registerForm.classlist.remove('toggleForm');
-                    loginForm.classlist.add('toggleForm');
-                }         
-            });
-            function _(e) {
-                return document.getElementById(e);
-            }
+                    <div class="trading-slider-control">
+                        <div class="swiper-button-prev slider-arrow">
+                            <ion-icon name="arrow-black-outline"></ion-icon>
+                        </div> 
+                        <div class="swiper-button-next slider-arrow">
+                            <ion-icon name="arrow-black-outline"></ion-icon>
+                        </div> 
+                        <div class="swiper-pagination">
 
-            fonction showForm() {
-                document.querySelector('.form-wrapper .card').classlist.toggle('show');
-            }
-        </script>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>       
+        <script src="script.js"></script>
     </body>    
 </html>
