@@ -1,0 +1,397 @@
+<DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>DailyFood.com</title>
+    </head>
+    <body>
+      <div class="container_head">
+        <nav class="nav-bar">
+          <div class="logo"><img src="logo.png"></div>
+            <ul>
+              <li><div class="search_bar"><input name="p" id="yschsp" class="search_zone" tabindex="1" type="text" autocomplete="yes" placeholder="search..."></div> </li>
+              <li><div class="search_button"><ion-icon name="search-outline"></ion-icon></div></li>
+              <li><a href="#"><ion-icon name="home"></ion-icon> Home</a></li>
+              <li><a href="#"><ion-icon name="restaurant"></ion-icon> Restaurant</a></li>
+              <li><a href="#">SuperMarket</a></li>
+              <li><a href="#"><ion-icon name="cart"></ion-icon> Panier</a></li>
+              <li>
+                  <button class="btn" id="displayForm">Connexion</button>
+              </li>    
+            </ul>
+        </nav>
+          <div class="description">
+            <div class="text print">Profitez des meilleurs services de livraisons.</div>
+            <div class="text">Profitez des meilleurs services de restaurations.</div>
+            <div class="text">Profitez des meilleurs produits disponible sur le marchée.</div>
+            <div class="text">Reservez dans les meilleurs restaurants en un clic.</div>
+          </div>
+          <img class="container_img active" src="img10.jpg">
+          <img class="container_img" src="img7.jpg">
+          <img class="container_img" src="img9.jpg">
+          <img class="container_img" src="img1.jpg">
+          <div class="next" onmouseover="this.className='nexth'" 
+          onmouseout="this.className='next'"><ion-icon name="chevron-forward-outline"></ion-icon></div>
+          <div class="preview" onmouseover="this.className='previewh'" 
+          onmouseout="this.className='preview'"><ion-icon name="chevron-back-outline"></ion-icon></div>
+        </div>
+        <br>
+        <section id="trading">
+            <div class="container">
+              <h3 class="text-center section-heading">- popular Delivery -</h3>
+            </div>
+            <div class="container">
+              <div class="swiper tranding-slider">
+                <div class="swiper-wrapper">
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="food-1.png" alt="Tranding">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="food-add"><ion-icon name="duplicate-outline"></ion-icon></h1>
+                      <h1 class="food-price">4500 fcfa</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Special Pizza
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="food-2.png" alt="Tranding">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="food-add"><ion-icon name="duplicate-outline"></ion-icon></h1>
+                      <h1 class="food-price">2500 fcfa</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Meat Ball
+                        </h2>
+                        <h3 class="food-rating">
+                          <span> 5 </span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="food-3.png" alt="Tranding">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="food-add"><ion-icon name="duplicate-outline"></ion-icon></h1>
+                      <h1 class="food-price">4600 fcfa</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Burger
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="food-4.png" alt="Tranding">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="food-add"><ion-icon name="duplicate-outline"></ion-icon></h1>
+                      <h1 class="food-price">2500 fcfa</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Frish Curry
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="food-5.png" alt="Tranding">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="food-add"><ion-icon name="duplicate-outline"></ion-icon></h1>
+                      <h1 class="food-price">1750 fcfa</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Pane Cake
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="food-6.png" alt="Tranding">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="food-add"><ion-icon name="duplicate-outline"></ion-icon></h1>
+                      <h1 class="food-price">4500 fcfa</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Vanilla cake
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="img8.jpg" alt="Tranding">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="food-add"><ion-icon name="duplicate-outline"></ion-icon></h1>
+                      <h1 class="food-price">3500 fcfa</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Burger + frites
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="dessert1.jpg" alt="Tranding">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="food-add"><ion-icon name="duplicate-outline"></ion-icon></h1>
+                      <h1 class="food-price">4500 fcfa</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="food-name">
+                          Vanilla cake
+                        </h2>
+                        <h3 class="food-rating">
+                          <span>4.5</span>
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+                          </div>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+                </div>
+      
+                <div class="tranding-slider-control">
+                  <div class="swiper-button-prev slider-arrow">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                  </div>
+                  <div class="swiper-button-next slider-arrow">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+      
+              </div>
+            </div>
+        </section>
+        <br>
+        <div style="display:flex; justify-content: space-around; padding:2rem;margin-top: 2rem;z-index: 0;">
+          <div class="css-1nxsoqg" role="list">
+            <div class="css-albjzg" role="listitem">
+              <div class="css-ox6yeh"><div class="css-1vk12gd">
+                <picture data-test-id="responsive-image" class="css-aruc50">
+                  <source srcset="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/gb/cms/SEO/Business KWs/icon1new.png 1x, https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_750/hellofresh_website/gb/cms/SEO/Business KWs/icon1new.png 2x" media="(max-width: 767px)">
+                  <source srcset="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/gb/cms/SEO/Business KWs/icon1new.png 1x, https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_750/hellofresh_website/gb/cms/SEO/Business KWs/icon1new.png 2x" media="(min-width: 768px) and (max-width: 991px)">
+                  <source srcset="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/gb/cms/SEO/Business KWs/icon1new.png 1x, https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_750/hellofresh_website/gb/cms/SEO/Business KWs/icon1new.png 2x" media="(min-width: 992px)">
+                  <img class="css-aruc50" src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/gb/cms/SEO/Business KWs/icon1new.png" role="presentation" alt="" loading="lazy"></picture>
+                </div>
+                  <h3 class="css-70xars">Gagnez du temps et prenez du plaisir à cuisiner de façon abordable</h3>
+                  <p class="css-xz5ev2">Les ingrédients de nos box vous sont livrés dans les bonnes quantités pour vous permettre de cuisiner vos repas de manière économique et sans gaspillage. Il ne vous reste plus qu’à enfiler votre tablier !</p>
+                </div>
+              </div>
+              <div class="css-albjzg" role="listitem">
+                <div class="css-ox6yeh"><div class="css-1vk12gd">
+                  <picture data-test-id="responsive-image" class="css-aruc50">
+                    <source srcset="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/gb/cms/SEO/Business KWs/icon2new.png 1x, https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_750/hellofresh_website/gb/cms/SEO/Business KWs/icon2new.png 2x" media="(max-width: 767px)">
+                    <source srcset="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/gb/cms/SEO/Business KWs/icon2new.png 1x, https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_750/hellofresh_website/gb/cms/SEO/Business KWs/icon2new.png 2x" media="(min-width: 768px) and (max-width: 991px)">
+                    <source srcset="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/gb/cms/SEO/Business KWs/icon2new.png 1x, https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_750/hellofresh_website/gb/cms/SEO/Business KWs/icon2new.png 2x" media="(min-width: 992px)"><img class="css-aruc50" src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/gb/cms/SEO/Business KWs/icon2new.png" role="presentation" alt="" loading="lazy"></picture>
+                  </div>
+                  <h3 class="css-70xars">Un service de livraison de nourriture flexible pour toute la famille</h3>
+                  <p class="css-xz5ev2">Passez commande sur notre site de livraison de nourriture et réceptionnez votre box chaque semaine. Ajoutez des recettes familiales à votre box et recevez tous les ingrédients pour réaliser vos repas pour une famille avec enfant(s).</p>
+                  </div>
+                </div>
+                <div class="css-albjzg" role="listitem">
+                  <div class="css-ox6yeh">
+                    <div class="css-1vk12gd">
+                      <picture data-test-id="responsive-image" class="css-aruc50">
+                      <source srcset="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/gb/cms/SEO/Business KWs/icon3new.png 1x, https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_750/hellofresh_website/gb/cms/SEO/Business KWs/icon3new.png 2x" media="(max-width: 767px)">
+                      <source srcset="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/gb/cms/SEO/Business KWs/icon3new.png 1x, https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_750/hellofresh_website/gb/cms/SEO/Business KWs/icon3new.png 2x" media="(min-width: 768px) and (max-width: 991px)">
+                      <source srcset="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/gb/cms/SEO/Business KWs/icon3new.png 1x, https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_750/hellofresh_website/gb/cms/SEO/Business KWs/icon3new.png 2x" media="(min-width: 992px)">
+                      <img class="css-aruc50" src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/gb/cms/SEO/Business KWs/icon3new.png" role="presentation" alt="" loading="lazy"></picture>
+                    </div>
+                    <h3 class="css-70xars">Des ingrédients frais, locaux et de saison</h3>
+                    <p class="css-xz5ev2">HelloFresh s’engage pour l’écologie et le développement durable. Nos chefs développent des recettes à partir d’ingrédients locaux et de saison – pour une assiette savoureuse et respectueuse de l’environnement.</p>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <footer>
+          <div class="btn_back_up">
+              <ion-icon name="arrow-up-outline"></ion-icon>
+          </div>
+            <div class="container_footer">
+                <div class="container_body">
+                    <div class="content">
+                      <ul class=""><li><h3>DailyFood.com</h3></li><br>
+                        <li><a href="#">Questions</a></li>
+                        <li><a href="#">Help</a></li>
+                      </ul>
+                    </div>
+                    <div class="content">
+                      <ul class=""><li><h3>COMPANY</h3></li><br>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                      </ul>
+                    </div>
+                    <div class="content">
+                        <ul class=""><li><h3>Partenaire</h3></li><br>
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                      <ul>
+                        <li><h3> Contacts</h3></li><br>
+                        <li>+237 6-80-77-51-86</li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                      </ul>
+                    </div>
+                    <div class="content">
+                      <ul class="">
+                        <li><h3> <u>Nous suivre :</u></h3></li><br>
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="content_bottom">
+                    Conception / logo du site © 2022 Paul canvas ; contributions des utilisateurs sous licence CC BY-SA . rév 2022.11.22.43050
+                </div>
+            </div>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+        <script>
+          var TrandingSlider = new Swiper('.tranding-slider', {
+              effect: 'coverflow',
+              grabCursor: true,
+              centeredSlides: true,
+              loop: true,
+              slidesPerView: 'auto',
+              coverflowEffect: {
+                  rotate: 0,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 2.5,
+              },
+              pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+              },
+              navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+              }
+              });
+        </script>      
+    </body>    
+</html>
