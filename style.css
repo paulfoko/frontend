@@ -7,6 +7,7 @@
     margin: 0;
     outline: none;
 }
+<<<<<<< Updated upstream
 
 :root {
   --primary: #ffae00;
@@ -21,6 +22,12 @@ body{
   justify-content: center;
 }
 .container_head {
+=======
+body{
+  justify-content: center;
+}
+.container {
+>>>>>>> Stashed changes
     position:relative;
     display: flex;
     height: 100vh;
@@ -209,6 +216,7 @@ color: #fff;
 .text-center {
   text-align: center;
 }
+<<<<<<< Updated upstream
 .section-heading {
   font-size: 1.7rem;
   color: #292929;
@@ -234,13 +242,97 @@ color: #fff;
   object-fit: cover;
 }
 .tranding-slide .tranding-slide-content {
+=======
+.container_popular{
+  margin: 5%;
+  width: 90%;
+  height: 180px;
+  justify-content: center;
+}
+.swiper-wrapper{
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  width: 300px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.swiper-slide{
+  width: 100%;
+  height: 100%;
+  background-color: #ffbb00;
+  border-radius: 15px;
+  border: 0;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+}
+#trading{
+  display: flex;
+  flex-direction: column;
+}
+.tranding-slide-img{
+  width: 300px;
+  height: 150px;
+  border: 0;
+  background-color: #ffffff00;
+  border-radius: 15px 15rem 15px 15px;
+  box-shadow: inset rgba(0, 0, 0, 0.507) 0 2px 4px 0 ;
+  z-index: 1;
+}
+.tranding-slide-img img{
+  width: 300px;
+  height: 150px;
+  border-radius: 15px 15rem 15px 15px;
+  box-shadow: inset rgba(0, 0, 0, 0.507) 0 2px 4px 0 ;
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0.1.5s;
+}
+.tranding-slide-img img:hover{
+  transition: 0.2s;
+  border-radius: 9px;
+  box-shadow: 0;
+}
+.price{
+  color: #fff;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+>>>>>>> Stashed changes
   position: absolute;
   left: 0;
   top: 0;
+<<<<<<< Updated upstream
   right: 0;
   bottom: 0;
 }
 .tranding-slide-content .food-add {
+=======
+  transform: rotate(45deg);
+}
+.note{
+  background-color: #ffbb00;
+  color: #fff;
+  border-radius: 90px;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.7rem;
+  padding-top: 3.5px;
+  margin-top: 3px;
+  text-align: center;
+}
+.tranding-slide-content{
+  bottom: 5px;
+  left: 5px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin-left: 1rem;
+  z-index: 12;
+>>>>>>> Stashed changes
   position: absolute;
   cursor: pointer;
   font-size: 2rem;
@@ -248,6 +340,7 @@ color: #fff;
   left: 2rem;
   color: var(--white);
 }
+<<<<<<< Updated upstream
 .tranding-slide-content .food-price {
   position: absolute;
   top: 2rem;
@@ -262,10 +355,21 @@ color: #fff;
   bottom: 2rem;
   left: 2rem;
   color: var(--white);
+=======
+.element-price{
+  color: #fff;
+  font-size: 1rem;
+}
+.element-name{
+  color: black;
+  font-size: 1rem;
+  padding: 3px;
+>>>>>>> Stashed changes
 }
 .food-rating {
   padding-top: 1rem;
   display: flex;
+<<<<<<< Updated upstream
   gap: 1rem;
 }
 .rating ion-icon {
@@ -277,10 +381,22 @@ color: #fff;
 }
 .tranding-slider-control {
   position: relative;
+=======
+  text-align: center;
+  padding: 5px;
+}
+.element-rating{
+  margin-left: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.tranding-slider-control {
+>>>>>>> Stashed changes
   bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< Updated upstream
   max-height: 60px;
 }
 .tranding-slider-control .swiper-button-next {
@@ -294,6 +410,17 @@ color: #fff;
   border-radius: 50%;
   left: 42%;
   transform: translateX(-42%);
+=======
+  bottom: 0;
+  position: relative;
+  height: 10px;
+}
+.slider-arrow {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 90px;
+
+>>>>>>> Stashed changes
   filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
 }
 .tranding-slider-control .slider-arrow ion-icon {
@@ -451,7 +578,11 @@ footer a{
   flex-basis: 33.33333333333333%;
   max-width: 33.33333333333333%;
 }
-
+.content_bottom{
+  font-size: 0.7rem;
+  justify-content: center;
+  text-align: center;
+}
 
 
 

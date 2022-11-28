@@ -1,4 +1,6 @@
+var element, length, deg, z, move=0;
 
+<<<<<<< Updated upstream
 
 
 let search = document.querySelector('.search_button');
@@ -26,6 +28,35 @@ window.scrollTo({
         behavior: 'smooth',
 });
 });
+=======
+function rotate(direction){
+    move += direction;
+
+    for(var i = 0; i <length; i++){
+        element[i].style.transform = "rotateY("+(deg*(i+move))+"deg) translateZ("+z+"px)";
+    }
+}
+function load(){
+    var element = document.getElementsByClassName('swiper-slide');
+    length = element.length;
+    
+    deg = 360 / length;
+    z = (element[0].offsetWidth / 2) / Math.tan((deg / 2) * (Math.PI / 180));
+
+    for (var i = 0; i < length; i++) {
+    element[i].style.transform = "rotateY("+(deg*i)+"deg) translateZ("+z+"px)";
+    }
+}
+
+let rot_prev = document.querySelector('.swiper-button-prev');
+let rot_next = document.querySelector('.swiper-button-next');
+
+rot_prev.addEventListener('click', rotate(-1));
+rot_next.addEventListener('click', rotate(1));
+
+
+window.addEventListener ('load', load);
+>>>>>>> Stashed changes
 
 let img_slider = document.getElementsByClassName('container_img');
 let text_slider = document.getElementsByClassName('text');
