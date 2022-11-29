@@ -6,32 +6,38 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
             <link rel="stylesheet" href="./styles.css">
-            <title>Formulaire d'Inscription et de Connexion</title>
+            <title>Formulaire de Connexion</title>
         </head>
         <body>
+            <div class="back"><img src="back_img.jpg"></div>
+            <div class="back_flout"></div>
             <div class="container">
                 <div class="forms">
+                    <div class="btn_passer"><a href="#">passer ...</a></div>
                     <div class="form login">
                         <span class="title">connexion</span>
 
                         <form action="#">
                             <div class="input-field">
+                                <ion-icon name="mail-outline"></ion-icon>
                                 <input type="text" placeholder="Enter your email" required>
-                                <i class="uil uil-envelope icon"></i>
                             </div>
                             <div class="input-field">
-                                <input type="password" placeholder="Enter your password" required>
-                                <i class="uil uil-lock icon"></i>
-                                <i class="uil uil-eye-slash showHidePw"></i>
+                                <ion-icon name="key-outline"></ion-icon>
+                                <input type="password" placeholder="Enter your password" id="inputpw" required>
+                                <span class="eyes" onclick="password_show()">
+                                    <ion-icon name="eye-outline" id="Hide1" class="show"></ion-icon>
+                                    <ion-icon name="eye-off-outline" id="Hide2"></ion-icon>
+                                </span>
                             </div>
 
                            <div class="checkbox-text">
                                 <div class="checkbox-content">
                                     <input type="checkbox" id="logCheck">
-                                    <label for="logCheck" class="text">se souvenir</label>
+                                    <label for="logCheck" class="text">se souvenir de moi</label>
                                 </div>
 
-                                <a href="#" class="text">mot de passe oublié?</a>
+                                <a href="#" class="text">mot de passe oublié ?</a>
                            </div> 
                            <div class="input-field button">
                             <input type="button" value="se connecter">
@@ -39,13 +45,33 @@
                         </form>
                         
                         <div class="login-signup">
-                            <span class="text">pas inscrit?
-                                <a href="#" class="text signup-text">inscris toi!</a>
+                            <span class="text">pas de compte ?
+                                <a href="#" class="text signup-text">cliquez ici !</a>
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
-        </body>
+            <script>
+            function password_show(){
+                let x = document.getElementsById("inputpw");
+                var y = document.getElementsById("Hide1");
+                var z = document.getElementsById("Hide2");
 
+                if(x.type === 'password'){
+                    x.type = "text";
+                    y.classList.add('show');
+                    z.classList.remove('show');
+                }else{
+                    x.type = "password";
+                    y.classList.remove('show');
+                    z.classList.add('show');
+                }
+            }
+            
+        </script>
+        </body>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+        
     </html>
