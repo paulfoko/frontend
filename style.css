@@ -7,27 +7,15 @@
     margin: 0;
     outline: none;
 }
-<<<<<<< Updated upstream
-
 :root {
   --primary: #ffae00;
   --white: #ffffff;
   --bg: #f5f5f5;
 }
-html {
-  font-family: "Montserrat", sans-serif;
-  scroll-behavior: smooth;
-}
 body{
   justify-content: center;
 }
 .container_head {
-=======
-body{
-  justify-content: center;
-}
-.container {
->>>>>>> Stashed changes
     position:relative;
     display: flex;
     height: 100vh;
@@ -147,6 +135,7 @@ color: #fff;
 }
 .nav-bar{
     display: flex;
+    justify-content: end;
     background: linear-gradient(rgba(114, 114, 114, 0.315), rgba(255, 255, 255, 0.315));
     align-items: center;
     transition: 0.4s;
@@ -186,7 +175,8 @@ color: #fff;
     justify-content: flex-end;
     align-items: center;
     flex: 1;
-    padding-right: 40px;
+    padding: 0;
+    margin-left: 1rem;
     text-align: right;
     list-style-type: none;
 }
@@ -204,6 +194,63 @@ color: #fff;
     font-size: 16px;
 }
 
+.nav-item a {
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+.nav-item a:hover {
+  color: #ff9100c5;
+}
+
+.search {
+  transform: translate(-35%);
+  -webkit-transform: translate(-35%);
+  transition: transform 0.7s ease-in-out;
+}
+.no-search ion-icon{
+  font-size: 1.5rem;
+  color: #fff;
+  padding-right: 1rem;
+  padding-top: 4px;
+  cursor: pointer;
+}
+.no-search ion-icon:hover{
+  color: #ff9100c5;
+}
+.no-search {
+  transform: translate(0);
+  transition: transform 0.7s ease-in-out;
+}
+
+.search-input {
+  position: absolute;
+  outline: none;
+  font-size: 16px;
+  border-bottom: 2px solid #ff9100c5;
+  background-color: rgba(49, 49, 49, 0.562);
+  color: #fff;
+  border-top: 1px solid transparent;
+  padding: 0 35px;
+  height: 2.5rem;
+  width: 15rem;
+  border-radius: 10px;
+  top: -4px;
+  right: -15rem;
+  opacity: 1;
+  z-index: 1;
+  transition: opacity 0.6s ease;
+}
+
+.search-active {
+  opacity: 1;
+  z-index: 0;
+  right: 1rem;
+}
+
 
 
 
@@ -216,7 +263,6 @@ color: #fff;
 .text-center {
   text-align: center;
 }
-<<<<<<< Updated upstream
 .section-heading {
   font-size: 1.7rem;
   color: #292929;
@@ -242,97 +288,13 @@ color: #fff;
   object-fit: cover;
 }
 .tranding-slide .tranding-slide-content {
-=======
-.container_popular{
-  margin: 5%;
-  width: 90%;
-  height: 180px;
-  justify-content: center;
-}
-.swiper-wrapper{
-  perspective: 1000px;
-  transform-style: preserve-3d;
-  width: 300px;
-  height: 150px;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.swiper-slide{
-  width: 100%;
-  height: 100%;
-  background-color: #ffbb00;
-  border-radius: 15px;
-  border: 0;
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-}
-#trading{
-  display: flex;
-  flex-direction: column;
-}
-.tranding-slide-img{
-  width: 300px;
-  height: 150px;
-  border: 0;
-  background-color: #ffffff00;
-  border-radius: 15px 15rem 15px 15px;
-  box-shadow: inset rgba(0, 0, 0, 0.507) 0 2px 4px 0 ;
-  z-index: 1;
-}
-.tranding-slide-img img{
-  width: 300px;
-  height: 150px;
-  border-radius: 15px 15rem 15px 15px;
-  box-shadow: inset rgba(0, 0, 0, 0.507) 0 2px 4px 0 ;
-  max-width: 100%;
-  max-height: 100%;
-  transition: 0.1.5s;
-}
-.tranding-slide-img img:hover{
-  transition: 0.2s;
-  border-radius: 9px;
-  box-shadow: 0;
-}
-.price{
-  color: #fff;
-  width: 90px;
-  height: 90px;
-  text-align: center;
->>>>>>> Stashed changes
   position: absolute;
   left: 0;
   top: 0;
-<<<<<<< Updated upstream
   right: 0;
   bottom: 0;
 }
 .tranding-slide-content .food-add {
-=======
-  transform: rotate(45deg);
-}
-.note{
-  background-color: #ffbb00;
-  color: #fff;
-  border-radius: 90px;
-  width: 1.5rem;
-  height: 1.5rem;
-  font-size: 0.7rem;
-  padding-top: 3.5px;
-  margin-top: 3px;
-  text-align: center;
-}
-.tranding-slide-content{
-  bottom: 5px;
-  left: 5px;
-  display: flex;
-  text-align: center;
-  justify-content: space-around;
-  margin-left: 1rem;
-  z-index: 12;
->>>>>>> Stashed changes
   position: absolute;
   cursor: pointer;
   font-size: 2rem;
@@ -340,7 +302,6 @@ color: #fff;
   left: 2rem;
   color: var(--white);
 }
-<<<<<<< Updated upstream
 .tranding-slide-content .food-price {
   position: absolute;
   top: 2rem;
@@ -355,21 +316,10 @@ color: #fff;
   bottom: 2rem;
   left: 2rem;
   color: var(--white);
-=======
-.element-price{
-  color: #fff;
-  font-size: 1rem;
-}
-.element-name{
-  color: black;
-  font-size: 1rem;
-  padding: 3px;
->>>>>>> Stashed changes
 }
 .food-rating {
   padding-top: 1rem;
   display: flex;
-<<<<<<< Updated upstream
   gap: 1rem;
 }
 .rating ion-icon {
@@ -381,23 +331,13 @@ color: #fff;
 }
 .tranding-slider-control {
   position: relative;
-=======
   text-align: center;
   padding: 5px;
-}
-.element-rating{
-  margin-left: 0.5rem;
-  display: flex;
-  justify-content: space-around;
-}
-.tranding-slider-control {
->>>>>>> Stashed changes
   bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< Updated upstream
-  max-height: 60px;
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
 }
 .tranding-slider-control .swiper-button-next {
   left: 58% !important;
@@ -409,19 +349,8 @@ color: #fff;
   height: 3.5rem;
   border-radius: 50%;
   left: 42%;
-  transform: translateX(-42%);
-=======
-  bottom: 0;
-  position: relative;
+  transform: translateX(-42%);s
   height: 10px;
-}
-.slider-arrow {
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 90px;
-
->>>>>>> Stashed changes
-  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
 }
 .tranding-slider-control .slider-arrow ion-icon {
   font-size: 2rem;
@@ -446,16 +375,6 @@ color: #fff;
 }
 
 
-footer{
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-footer a{
-  text-decoration: none;
-  color: rgb(179, 179, 179);
-}
 .btn_back_up{
   display: ;
   border-radius: 90px;
@@ -471,23 +390,179 @@ footer a{
   position: fixed;
   z-index: 100;
 }
-.container_body{
-  display: flex;
-  justify-content: space-around;
-  color: rgb(182, 182, 182);
+
+
+--/debut footer/--
+
+
+.main {
+	max-height: 550px;;
+	background-color: #262626;
+	color: white;
+	font-size: 38pt;
+	text-align: center;
+	line-height: 550px;
 }
-.container_body ion-icon {
-  font-size: 2rem;
-  margin-top: 5px;
+footer{
+	position: relative;
+	bottom: 0;
 }
-.container_footer{
-  background-color: #2c2c2c;
-  padding-top: 4rem;
-  color: rgb(182, 182, 182);
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+	margin-top: 80px;
 }
-.container_footer ul{
-  list-style-type: none;
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
 }
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center ion-icon{
+	color: #ffffff;
+	font-size: 2.5rem;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center ion-icon :nth-child(3){
+	font-size: 2rem;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	cursor: pointer;
+	font-size: 2rem;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+  margin-left: 1rem;
+
+}
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+
+}
+
+--/fin fooer/--
+
+
 .content_bottom{
   font-size: 0.7rem;
   justify-content: center;
@@ -579,6 +654,8 @@ footer a{
   max-width: 33.33333333333333%;
 }
 .content_bottom{
+  background-color: #292c2f;
+  color: #fff;
   font-size: 0.7rem;
   justify-content: center;
   text-align: center;
@@ -700,4 +777,10 @@ form {
 .formButton:hover {
     box-shadow: 3px 5px 15px  #94f7e6;
     transform: translateY(-5px);
+}
+
+
+.conent li{
+  display: flex;
+  align-items: center;
 }

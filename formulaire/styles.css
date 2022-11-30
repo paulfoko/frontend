@@ -108,6 +108,7 @@ body{
 }
 .show{
     display: none;
+    z-index: 0;
 }
 .eyes{
     position: absolute;
@@ -119,6 +120,7 @@ body{
     height: 20px;
     cursor: pointer;
     width: 10px;
+    z-index: 2;
 }
 .input-field ion-icon{
     position: absolute;

@@ -24,10 +24,11 @@
                             </div>
                             <div class="input-field">
                                 <ion-icon name="key-outline"></ion-icon>
+                                
                                 <input type="password" placeholder="Enter your password" id="inputpw" required>
                                 <span class="eyes" onclick="password_show()">
-                                    <ion-icon name="eye-outline" id="Hide1" class="show"></ion-icon>
-                                    <ion-icon name="eye-off-outline" id="Hide2"></ion-icon>
+                                    <ion-icon name="eye-outline" id="Hide1" ></ion-icon>
+                                    <ion-icon name="eye-off-outline" id="Hide2" class="show"></ion-icon>
                                 </span>
                             </div>
 
@@ -54,9 +55,9 @@
             </div>
             <script>
             function password_show(){
-                let x = document.getElementsById("inputpw");
-                var y = document.getElementsById("Hide1");
-                var z = document.getElementsById("Hide2");
+                var x = document.getElementById("inputpw");
+                var y = document.getElementById("Hide1");
+                var z = document.getElementById("Hide2");
 
                 if(x.type === 'password'){
                     x.type = "text";

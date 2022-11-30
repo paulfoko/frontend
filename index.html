@@ -12,17 +12,22 @@
       <div class="container_head">
         <nav class="nav-bar">
           <div class="logo"><img src="logo.png"></div>
+          <div>
+            <ul class="nav">
+              <li class="nav-item"><a href="#">Home</a></li>
+              <li class="nav-item"><a href="#">Restaurant</a></li>
+              <li class="nav-item"><a href="#">SuperMarket</a></li>
+              <li class="nav-item"><a href="#">Contact Us</a></li>
+              <li class="nav-item"><a href="#">Connexion</a></li>
             <ul>
-              <li><div class="search_bar"><input name="p" id="yschsp" class="search_zone" tabindex="1" type="text" autocomplete="yes" placeholder="search..."></div> </li>
-              <li><div class="search_button"><ion-icon name="search-outline"></ion-icon></div></li>
-              <li><a href="#"><ion-icon name="home"></ion-icon> Home</a></li>
-              <li><a href="#"><ion-icon name="restaurant"></ion-icon> Restaurant</a></li>
-              <li><a href="#">SuperMarket</a></li>
-              <li><a href="#"><ion-icon name="cart"></ion-icon> Panier</a></li>
-              <li>
-                  <button class="btn" id="displayForm">Connexion</button>
-              </li>    
+          </div>
+          <div>
+            <ul class="nav no-search">
+              <li><ion-icon name="cart"></ion-icon></li>
+              <div class="search"><ion-icon name="search-outline" id="search-icon"></ion-icon></div>
+              <input class="search-input" type="text" placeholder="Search..">
             </ul>
+          </div>
         </nav>
           <div class="description">
             <div class="text print">Profitez des meilleurs services de livraisons.</div>
@@ -311,61 +316,68 @@
                 </div>
           </div>
         </div>
-        <footer>
-          <div class="btn_back_up">
-              <ion-icon name="arrow-up-outline"></ion-icon>
+        <div class="btn_back_up">
+          <ion-icon name="arrow-up-outline"></ion-icon>
+        </div>
+        <footer class="footer-distributed">
+
+          <div class="footer-left">
+  
+              <h3>Daily-<span>Food</span></h3>
+  
+              <p class="footer-links">
+                  <a href="#">Home</a>
+                  ·
+                  <a href="#">Pricing</a>
+                  ·
+                  <a href="#">About</a>
+                  ·
+                  <a href="#">Faq</a>
+                  ·
+                  <a href="#">Contact</a>
+              </p>
+  
+              <p class="footer-company-name">Daily-Food &copy; 2022</p>
           </div>
-            <div class="container_footer">
-                <div class="container_body">
-                    <div class="content">
-                      <ul class=""><li><h3>DailyFood.com</h3></li><br>
-                        <li><a href="#">Questions</a></li>
-                        <li><a href="#">Help</a></li>
-                      </ul>
-                    </div>
-                    <div class="content">
-                      <ul class=""><li><h3>COMPANY</h3></li><br>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">About Us</a></li>
-                      </ul>
-                    </div>
-                    <div class="content">
-                        <ul class=""><li><h3>Partenaire</h3></li><br>
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="#">About Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="content">
-                      <ul>
-                        <li><h3> Contacts</h3></li><br>
-                        <li>+237 6-80-77-51-86</li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">About Us</a></li>
-                      </ul>
-                    </div>
-                    <div class="content">
-                      <ul class="">
-                        <li><h3> <u>Nous suivre :</u></h3></li><br>
-                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                      </ul>
-                    </div>
-                </div>
-                <div class="content_bottom">
+  
+          <div class="footer-center">
+  
+              <div>
+                  <ion-icon name="location-outline"></ion-icon>
+                  <p><span>Yaoundé </span> CAMEROUN</p>
+              </div>
+  
+              <div>
+                  <ion-icon name="call-outline"></ion-icon>
+                  <p>+237 680-77-51-86</p>
+              </div>
+  
+              <div>
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <p>
+                      <a href="mailto:support@company.com">Contacts@DailyFood.com</a>
+                  </p>
+              </div>
+  
+          </div>
+  
+          <div class="footer-right">
+  
+              <p class="footer-company-about">
+                  <span>About the company</span>
+                  DailyFood is a delivery site for food and consumer-related products.
+              </p>
+  
+              <div class="footer-icons">
+                  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                  <a href="https://wa.me/qr/P7NW6KPL4OBUE1 "><ion-icon name="logo-whatsapp"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                  <a href="https://github.com/paulfoko"><ion-icon name="logo-github"></ion-icon></a>
+              </div>
+          </div>
+      </footer><div class="content_bottom">
                     Conception / logo du site © 2022 Paul canvas ; contributions des utilisateurs sous licence CC BY-SA . rév 2022.11.22.43050
                 </div>
-            </div>
-        </footer>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
