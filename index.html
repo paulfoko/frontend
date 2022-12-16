@@ -24,8 +24,15 @@
           <div>
             <ul class="nav no-search">
               <li><ion-icon name="cart"></ion-icon></li>
-              <div class="search"><ion-icon name="search-outline" id="search-icon"></ion-icon></div>
-              <input class="search-input" type="text" placeholder="Search..">
+              <li>
+                <div class="search">
+                  <div class="btn_search"></div>
+                  <div class="search-input">
+                    <input type="text" id="input_search" placeholder="Search ..."/>
+                  </div>
+                  <span class="clear" onclick="document.getElementById('input_search').value =''"></span>
+                </div>
+              </li>
             </ul>
           </div>
         </nav>
@@ -404,6 +411,12 @@
                   prevEl: '.swiper-button-prev',
               }
               });
+
+          let btn_search= document.querySelector('.btn_search');
+          let search= document.querySelector('.search');
+          btn_search.onclick = function(){
+            search.classList.toggle('visible');
+          }
         </script>      
     </body>    
 </html>

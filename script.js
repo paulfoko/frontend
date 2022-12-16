@@ -1,11 +1,4 @@
- let srch= document.querySelector("#search-icon");
- 
- srch.addEventListener('click',function() {
-    $(".nav").toggleClass("search");
-    $(".nav").toggleClass("no-search");
-    $(".search-input").toggleClass("search-active");
-  });
-  var element, length, deg, z, move=0;
+var element, length, deg, z, move=0;
 
 
 let back_to_top = document.querySelector('.btn_back_up');
