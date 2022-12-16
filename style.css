@@ -377,18 +377,56 @@ color: #fff;
   right: 0;
   bottom: 0;
 }
-.tranding-slide-content .food-add {
+.tranding-slide-content .add {
   position: absolute;
-  cursor: pointer;
-  font-size: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   top: 2rem;
   left: 2rem;
+  text-align: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(31, 31, 31, 0.548);
+  box-shadow: rgba(185, 185, 185, 0.507) 0 2px 4px 0;
+}
+.tranding-slide-content .food-add {
+  cursor: pointer;
+  padding: 4px;
+  font-size: 2rem;
+  font-weight: 2.5rem;
   color: var(--white);
+}
+.tranding-slide-content .price {
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 9rem;
+  height: 6rem;
+  top: 0;
+  right: 0;
+  border: 0;
+  border-radius: 0 160px 0 500px;
+  background: #ff9100c5;
+  box-shadow: rgba(156, 104, 25, 0.664) 0 2px 4px 0;
+}
+.tranding-slide-content .price h1{
+  transform: rotate(35deg);
+  top: 1rem;
+  right: 1rem;
+  color: #fff;
+}
+.tranding-slide-content .price h4{
+  transform: rotate(35deg);
+  padding-left: 25px;
+  color: #fff;
 }
 .tranding-slide-content .food-price {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 0rem;
+  right: 0rem;
   color: var(--white);
 }
 .tranding-slide-content .tranding-slide-content-bottom {
