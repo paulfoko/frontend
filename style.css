@@ -217,7 +217,7 @@ color: #fff;
   overflow: hidden;
 }
 .search:hover{
-  background-color:rgba(255, 255, 255, 0.966);
+  background-color:rgba(255, 255, 255, 0);
 }
 .btn_search{
   border-radius: 40px;
@@ -274,7 +274,7 @@ color: #fff;
   font-size: 1rem;
   padding: 10px 0;
   color: #000;
-  outline: navajowhite;
+  background: #fff;
   font-family: 'Poppins', sans-serif;
 }
 .search.visible {
@@ -605,7 +605,7 @@ color: #fff;
 }
 
 
---/debut footer/--
+/* debut footer */
 
 
 .main {
@@ -630,7 +630,10 @@ footer{
 	padding: 55px 50px;
 	margin-top: 80px;
 }
-
+.footer-left .logo_footer{
+  width: 16rem;
+  height: 5rem;
+}
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right{
