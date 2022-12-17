@@ -23,7 +23,9 @@
           </div>
           <div>
             <ul class="nav no-search">
-              <li><ion-icon name="cart"></ion-icon></li>
+              <li>
+                <div class="btn_cart"><ion-icon name="cart"></ion-icon></div>
+              </li>
               <li>
                 <div class="search">
                   <div class="btn_search"></div>
@@ -52,6 +54,68 @@
           onmouseout="this.className='preview'"><ion-icon name="chevron-back-outline"></ion-icon></div>
         </div>
         <br>
+        <!-- shopping cart -->
+        <div class="shopping_cart visible">
+          <h1>Your Cart</h1>
+          <hr>
+          <span class="reload"><ion-icon name="refresh-outline"></ion-icon></span>
+          <div class="content_cart">
+            <div class="Box_article">
+              <img src="hamburger.jpg">
+              
+              <div class="content">
+                <h3>hamburger</h3>
+                <span class="article_price">4500f/-</span>
+                <span class="article_quant">Qty : <input type="number" value="1"></span>
+              </div>
+              <Span class="btn_delete"><ion-icon name="trash-outline"></ion-icon></Span>
+            </div>
+            <div class="Box_article">
+              <img src="food-1.png">
+              
+              <div class="content">
+                <h3>hamburger</h3>
+                <span class="article_price">4500f/-</span>
+                <span class="article_quant">Qty : <input type="number" value="1"></span>
+              </div>
+              <Span class="btn_delete"><ion-icon name="trash-outline"></ion-icon></Span>
+            </div>
+            <div class="Box_article">
+              <img src="meal5.jpg">
+              
+              <div class="content">
+                <h3>hamburger</h3>
+                <span class="article_price">4500f/-</span>
+                <span class="article_quant">Qty : <input type="number" value="1"></span>
+              </div>
+              <Span class="btn_delete"><ion-icon name="trash-outline"></ion-icon></Span>
+            </div>
+            <div class="Box_article">
+              <img src="meal2.jpg">
+              
+              <div class="content">
+                <h3>hamburger</h3>
+                <span class="article_price">4500f/-</span>
+                <span class="article_quant">Qty : <input type="number" value="1"></span>
+              </div>
+              <Span class="btn_delete"><ion-icon name="trash-outline"></ion-icon></Span>
+            </div>
+            <div class="Box_article">
+              <img src="pancakes.jpg">
+              
+              <div class="content">
+                <h3>hamburger</h3>
+                <span class="article_price">4500f/-</span>
+                <span class="article_quant">Qty : <input type="number" value="1"></span>
+              </div>
+              <Span class="btn_delete"><ion-icon name="trash-outline"></ion-icon></Span>
+            </div>
+          </div>
+          <hr>
+          <span class="total"><h2>Total :</h2><h2> 240000 </h2><h4>fcfa</h4></span>
+          <button class="buy_now">BUY NOW</button>
+        </div>
+
         <section id="trading">
             <div class="container">
               <h3 class="text-center section-heading">- popular Delivery -</h3>
@@ -448,6 +512,11 @@
           let search= document.querySelector('.search');
           btn_search.onclick = function(){
             search.classList.toggle('visible');
+          }
+          let btn_cart= document.querySelector('.btn_cart')
+          let cart= document.querySelector('.shopping_cart')
+          btn_cart.onclick = function(){
+            cart.classList.toggle('visible');
           }
         </script>      
     </body>    
